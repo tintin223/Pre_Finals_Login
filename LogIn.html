@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Wish.com Log In Form</title>
+        <link rel="stylesheet" href="style2.css">
+
+    </head>
+    <body>
+        <div class="Login-Page">
+            <div class="form">
+                <form class="registration">
+                <input type="text"  placeholder="Username"/>
+                <input type="text"  placeholder="Password"/>
+                <input type="text"  placeholder="Email id"/>
+                <button>Submit</button>
+                <p class="message">Already Registered? <a  href="#">Log In</a>
+                </p>
+                </form>
+
+                <form class="Log In">
+                <input type="text" placeholder="User.name"/>
+                <input type="text" placeholder="Password"/>
+                <button>Log In</button>
+                <p class="message">Not Registered? <a href="#">Not Register</a>
+                </p> 
+
+                </form>
+
+            </div>
+
+        </div>
+        <script src='//code.jquery.com/jquery-3.6.0.min.js'>
+
+        </script>
+        <script>
+            $('.message a').click(function(){
+            $('form').animate({height:"toggle", opacity: "toggle"}, "slow");
+            })
+        </script>
+    </body>
+</html>
